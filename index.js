@@ -10,5 +10,5 @@ app.get('/', (req, res) => {
 });
 
 app.get('/test.js', (req, res) => {
-    res.sendFile(__dirname + '/index.e92a930e.js');
+    res.sendFile(__dirname + '/index-build.js');
 });
