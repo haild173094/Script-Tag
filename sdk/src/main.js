@@ -2,6 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './bootstrap'
 import AppConfig from './configs/app';
+import PolarisVue from '@qikify/polaris-vue'
+import '@qikify/polaris-vue/dist/style.css'
 
 
-createApp(App).mount(`#${AppConfig.ELEMENT_ID}`)
+createApp(App).mount(`#${AppConfig.ELEMENT_ID}`).use(PolarisVue)

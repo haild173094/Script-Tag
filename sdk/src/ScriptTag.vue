@@ -69,7 +69,7 @@ let tagValue = ref('');
   
     function  toggleActive() {
         active.value = !active.value;
-        console.log(active);
+        console.log(active.value);
     };
     function handleTagValueChange(value) {
         tagValue = value;
@@ -81,7 +81,7 @@ let tagValue = ref('');
             console.log(data);
         })
     }
-
+    
     getCustomerInfo();
 </script>
 
