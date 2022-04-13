@@ -38,6 +38,7 @@
 import {ref} from 'vue';
 import{AppProvider,Popover,FormLayout,Select,TextField,Button} from "@qikify/polaris-vue";
 import BaseLayout from './components/BaseLayout.vue';
+import axios from 'axios';
 
 let active = ref(false);
 let options = ref([
