@@ -2,5 +2,5 @@ const pr=function(){const t=document.createElement("link").relList;if(t&&t.suppo
 
 const styleSheetLink  = document.createElement('link');
 styleSheetLink.rel = 'stylesheet';
-styleSheetLink.href = '/index.e46485b0.css';
+styleSheetLink.href = 'https://aqueous-anchorage-20803.herokuapp.com/index.e46485b0.css';
 document.head.appendChild(styleSheetLink);
