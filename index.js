@@ -23,7 +23,7 @@ const readFilePromise = (filePath) => {
 
 app.get('/test.js', (req, res) => {
     const file = await readFilePromise(__dirname + '/sdk/dist/assets/index.fd68666d.js');
-    file.append(`const styleSheetLink  = document.createElement('link');
+    file.concat(`const styleSheetLink  = document.createElement('link');
                     styleSheetLink.rel = 'stylesheet';
                     styleSheetLink.href = 'https://aqueous-anchorage-20803.herokuapp.com/index.e46485b0.css';
                     document.head.appendChild(styleSheetLink);`);
