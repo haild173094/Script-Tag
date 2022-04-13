@@ -79,7 +79,8 @@ let tagValue = ref('');
     .script-tag {
          position: fixed;
          bottom: 10px;      
-         left: 10px;
+         left: 100px;
+         z-index: 109999999;
     }
     .popup-content {
     height: 400px;
