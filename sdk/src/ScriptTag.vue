@@ -81,7 +81,7 @@ let tagValue = ref('');
         })
     }
 
-    getCussomerInfo();
+    getCustomerInfo();
 </script>
 
 <style scoped>
