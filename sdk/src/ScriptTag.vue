@@ -75,6 +75,13 @@ let tagValue = ref('');
     };
     let id_customer = window.ShopifyAnalytics.meta.page.customerId;
     console.log("id customer: ",id_customer);
+    const getCustomerInfo = () => {
+        axios.get(`${window.shopUrl}/apps/oe-loyalty/customers/${id_customer}`).then(data => {
+            console.log(data);
+        })
+    }
+
+    getCussomerInfo();
 </script>
 
 <style scoped>
