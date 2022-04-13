@@ -10,5 +10,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/test.js', (req, res) => {
-    res.sendFile(__dirname + '/index-build.js');
+    res.sendFile(__dirname + '/sdk/dist/assets/index.fd68666d.js');
 });
+
+app.get('/index.e46485b0.css', (req, res) => {
+    res.sendFile(__dirname + '/sdk/dist/assets/index.e46485b0.css');
+})
