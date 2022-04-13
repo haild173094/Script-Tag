@@ -22,7 +22,7 @@ dist-ssr
 *.sln
 *.sw?
 
-*
+# *
 !dist/**
 !dist
 !.gitignore
