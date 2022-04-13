@@ -1,5 +1,8 @@
 <template>
-  <HeaderView></HeaderView>
+    <div >
+        <HeaderView></HeaderView>
+    </div>
+
 </template>
 
 <script lang="ts">

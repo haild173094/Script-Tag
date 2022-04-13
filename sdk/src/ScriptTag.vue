@@ -93,6 +93,7 @@ let tagValue = ref('');
          z-index: 109999999;
     }
     .popup-content {
+    width: 383px;
     height: 400px;
 }
 </style>
