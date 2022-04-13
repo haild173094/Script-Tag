@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@qikify/polaris-vue": "^0.5.3",
+    "axios": "^0.26.1",
     "mdb-ui-kit": "^3.11.0",
     "vue": "^3.2.25"
   },

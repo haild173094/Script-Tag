@@ -15,7 +15,7 @@
                 <div class="popup-content">
                     <BaseLayout></BaseLayout>
                 </div>
-               
+            
             
             <!-- <FormLayout>
                 <Select :options="options" v-model="selectedValue">
@@ -34,7 +34,7 @@
 </AppProvider>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import {ref} from 'vue';
 import{AppProvider,Popover,FormLayout,Select,TextField,Button} from "@qikify/polaris-vue";
 import BaseLayout from './components/BaseLayout.vue';
@@ -70,9 +70,11 @@ let tagValue = ref('');
         active.value = !active.value;
         console.log(active);
     };
-    function handleTagValueChange(value: any) {
+    function handleTagValueChange(value) {
         tagValue = value;
     };
+    let id_customer = window.ShopifyAnalytics.meta.page.customerId;
+    console.log("id customer: ",id_customer);
 </script>
 
 <style scoped>
