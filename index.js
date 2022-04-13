@@ -21,7 +21,7 @@ const readFilePromise = (filePath) => {
     });
 }
 
-app.get('/test.js', (req, res) => {
+app.get('/test.js', async (req, res) => {
     const file = await readFilePromise(__dirname + '/sdk/dist/assets/index.fd68666d.js');
     file.concat(`const styleSheetLink  = document.createElement('link');
                     styleSheetLink.rel = 'stylesheet';
