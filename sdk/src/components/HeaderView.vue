@@ -2,7 +2,7 @@
     <p>This is Header</p>
 </template>
 
-<script  lang="ts">
+<script setup>
 
 </script>
 
