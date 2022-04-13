@@ -2,7 +2,7 @@
     <p>This is Header</p>
 </template>
 
-<script setup>
+<script setup >
 
 </script>
 

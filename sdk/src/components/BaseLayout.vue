@@ -5,7 +5,7 @@
 
 </template>
 
-<script lang="ts">
+<script setup>
   import HeaderView from './HeaderView.vue';
 </script>
 
