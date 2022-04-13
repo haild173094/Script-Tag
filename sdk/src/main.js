@@ -6,4 +6,4 @@ import PolarisVue from '@qikify/polaris-vue'
 import '@qikify/polaris-vue/dist/style.css'
 
 
-createApp(App).mount(`#${AppConfig.ELEMENT_ID}`).use(PolarisVue)
+createApp(App).use(PolarisVue).mount(`#${AppConfig.ELEMENT_ID}`)
