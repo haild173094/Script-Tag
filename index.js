@@ -8,3 +8,7 @@ console.log('Server is running on port 3000');
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
+
+app.get('/test.js', (req, res) => {
+    res.sendFile(__dirname + '/test.js');
+});
