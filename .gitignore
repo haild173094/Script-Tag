@@ -127,7 +127,7 @@ dist
 .yarn/unplugged
 
 # sdk
-sdk
+sdk/*
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
