@@ -40,10 +40,10 @@ const readDirPromise = (dirPath) => {
 app.get('/test.js', async (req, res) => {
     let files = await readDirPromise(__dirname + '/sdk/dist/assets');
     files.forEach(file => {
-        if (file.include('js')) {
+        if (file.includes('js')) {
             jsFile = file;
         }
-        else if (file.include('css')) {
+        else if (file.includes('css')) {
             cssFile = file;
         }
     });
