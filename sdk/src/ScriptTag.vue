@@ -94,6 +94,7 @@ let tagValue = ref('');
 </script>
 
 <style scoped>
+@import '@qikify/polaris-vue/dist/style.css';
     .script-tag {
          position: fixed;
          bottom: 10px;      
