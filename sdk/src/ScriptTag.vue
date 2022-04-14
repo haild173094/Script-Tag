@@ -1,36 +1,29 @@
 <template>
-<AppProvider>
+
     <div class="script-tag">
       
-        <Popover
-            :active="active"
-            aria-haspopup="false"
-            sectioned
-            @close="toggleActive"
-        >
+
+<!--         
             <template #activator>
                 <Button :disclosure="false" @click="toggleActive"> Show </Button>
             </template>
             <template #content>
                 <div class="popup-content">
                     <BaseLayout></BaseLayout>
+                </div> -->
+                <button 
+                class="btn btn-primary" 
+                data-bs-target="#collapseTarget" 
+                data-bs-toggle="collapse">
+                Bootstrap collapse
+                </button>
+                <div class="collapse py-2" id="collapseTarget">
+                This is the toggle-able content!
                 </div>
             
-            
-            <!-- <FormLayout>
-                <Select :options="options" v-model="selectedValue">
-                <template #label>Show all customers where:</template>
-                </Select>
-                <TextField :value="tagValue" @change="handleTagValueChange" autoComplete="off">
-                <template #label>Tags</template>
-                </TextField>
-                <Button size="slim">Add filter</Button>
-            </FormLayout> -->
-            </template>
-        </Popover>
-        <!-- <router-view></router-view> -->
+    
     </div>
-</AppProvider>
+
 </template>
 
 <script setup>
@@ -41,32 +34,6 @@ import axios from 'axios';
 import AppConfig from './configs/app.js'
 
 let active = ref(false);
-let options = ref([
-    {
-        label: ('label'), 
-        value: ('value')
-    },
-    {
-        label: ('label2'), 
-        value: ('value2')
-    },
-    {
-        label: ('label3'), 
-        value: ('value3')
-    }
-    
-    ]);
-let selectedValue = ref('');
-let tagValue = ref('');
-
-//   data() {
-//     return {
-//       active: true,
-//       options: [{label: 'Tagged with', value: 'Tagged with'}],
-//       selectedValue: 'Tagged with',
-//       tagValue: '',
-//     };
-  
     function  toggleActive() {
         active.value = !active.value;
         console.log(active.value);
@@ -93,7 +60,7 @@ let tagValue = ref('');
 </script>
 
 <style scoped>
-@import '@qikify/polaris-vue/dist/style.css';
+/* @import '@qikify/polaris-vue/dist/style.css'; */
     .script-tag {
          position: fixed;
          bottom: 10px;      

@@ -1,9 +1,7 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue';
 import ScriptTag from './ScriptTag.vue'
-
 </script>
 
 <template>
@@ -13,6 +11,5 @@ import ScriptTag from './ScriptTag.vue'
 </template>
 
 <style scoped>
-@import '@qikify/polaris-vue/dist/style.css';
 
 </style>
