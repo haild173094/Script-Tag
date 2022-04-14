@@ -12,7 +12,8 @@
                     <BaseLayout></BaseLayout>
                 </div> -->
                 <div class="collapse py-3 popup-content" id="collapseTarget">
-                     This is the toggle-able content!
+                     <!-- This is the toggle-able content! -->
+                     <BaseLayout></BaseLayout>
                 </div>
                 <button 
                 class="btn btn-primary" 
@@ -74,5 +75,7 @@ let active = ref(false);
     .popup-content {
     width: 383px;
     height: 400px;
+    background-color: #a175ff;
+    margin-bottom: 5px;
 }
 </style>
