@@ -11,15 +11,17 @@
                 <div class="popup-content">
                     <BaseLayout></BaseLayout>
                 </div> -->
+                <div class="collapse py-3" id="collapseTarget">
+                     This is the toggle-able content!
+                </div>
                 <button 
                 class="btn btn-primary" 
                 data-bs-target="#collapseTarget" 
-                data-bs-toggle="collapse">
-                    Bootstrap collapse
+                data-bs-toggle="collapse"
+                >
+                    LoyaltyPoint
                 </button>
-                <div class="collapse py-2" id="collapseTarget">
-                     This is the toggle-able content!
-                </div>
+                
             
     
     </div>
