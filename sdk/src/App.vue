@@ -13,21 +13,6 @@ import ScriptTag from './ScriptTag.vue'
 </template>
 
 <style scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-.script-tag {
-  font-size: 1em;
-  line-height: 1.5em;
-  font-weight: bold;
-  color: red;
-  position: fixed;  
-  bottom: 20px;
-  left: 20px;
-}
+
+
 </style>
