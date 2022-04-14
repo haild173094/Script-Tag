@@ -13,6 +13,6 @@ import ScriptTag from './ScriptTag.vue'
 </template>
 
 <style scoped>
-
+@import '@qikify/polaris-vue/dist/style.css';
 
 </style>

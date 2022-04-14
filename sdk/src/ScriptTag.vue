@@ -29,7 +29,6 @@
             </template>
         </Popover>
         <!-- <router-view></router-view> -->
-        ~
     </div>
 </AppProvider>
 </template>
