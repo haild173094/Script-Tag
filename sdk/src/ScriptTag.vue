@@ -11,7 +11,7 @@
                 <div class="popup-content">
                     <BaseLayout></BaseLayout>
                 </div> -->
-                <div class="collapse py-3 popupcontent" id="collapseTarget">
+                <div class="collapse py-3 popup-content" id="collapseTarget">
                      This is the toggle-able content!
                 </div>
                 <button 
