@@ -39,6 +39,7 @@ import {ref} from 'vue';
 import{AppProvider,Popover,FormLayout,Select,TextField,Button} from "@qikify/polaris-vue";
 import BaseLayout from './components/BaseLayout.vue';
 import axios from 'axios';
+import AppConfig from './configs/app.js'
 
 let active = ref(false);
 let options = ref([
@@ -75,14 +76,21 @@ let tagValue = ref('');
         tagValue = value;
     };
     let id_customer = window.ShopifyAnalytics.meta.page.customerId;
+    let shop = window.Shopify.shop;
     console.log("id customer: ",id_customer);
     const getCustomerInfo = () => {
         axios.get(`${window.shopUrl}/apps/oe-loyalty/customers/${id_customer}`).then(data => {
             console.log(data);
         })
     }
+    const getDiscountCodeOfShop = ()=>{
+        axios.get(`${AppConfig.PORTAL_SERVER}/api/discount-types?shop=${shop}`).then(data => {
+            console.log("discount code:",data);
+        })
+    }
     
     getCustomerInfo();
+    getDiscountCodeOfShop();
 </script>
 
 <style scoped>
