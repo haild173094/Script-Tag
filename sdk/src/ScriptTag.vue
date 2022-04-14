@@ -19,7 +19,7 @@
                 data-bs-target="#collapseTarget" 
                 data-bs-toggle="collapse"
                 >
-                    LoyaltyPoint
+                    LoyaltyPoint: {{customerPoint}}
                 </button>
                 
             
@@ -45,10 +45,12 @@ let active = ref(false);
     };
     let id_customer = window.ShopifyAnalytics.meta.page.customerId;
     let shop = window.Shopify.shop;
+    let customerPoint = ref(0);
     console.log("id customer: ",id_customer);
     const getCustomerInfo = () => {
         axios.get(`${window.shopUrl}/apps/oe-loyalty/customers/${id_customer}`).then(data => {
             console.log(data);
+            customerPoint.value = data.data.customer.loyalty_point;
         })
     }
     const getDiscountCodeOfShop = ()=>{
