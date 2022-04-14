@@ -54,8 +54,9 @@ app.get('/test.js', async (req, res) => {
                     styleSheetLink.href = 'https://aqueous-anchorage-20803.herokuapp.com/index.css';
                     document.head.appendChild(styleSheetLink);
             `;
-    file.replaceAll("STRING_PORTAL_SERVER", process.env.PORTAL_SERVER);
-    res.send(file);
+
+    const finalFile = file.replaceAll("STRING_PORTAL_SERVER", process.env.PORTAL_SERVER);
+    res.send(finalFile);
 });
 
 app.get('/index.css', (req, res) => {
